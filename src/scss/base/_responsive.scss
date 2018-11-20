@@ -1,0 +1,210 @@
+@media (max-width: 1199px) {
+    .ms-navbar.navbar {
+        .container {
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        a {
+                            //font-size: 14px;
+                            padding: 0 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-navbar-menu {
+        position: absolute;
+        right: 0;
+    }
+
+    .ms-navbar.navbar {
+        .container {
+            //width: 100%;
+
+            .navbar-header {
+                .ms-title {
+                    display: none;
+                }
+            }
+
+            .navbar-collapse {
+                margin-right: 50px;
+
+                .navbar-nav {
+                    .nav-item {
+                        a {
+                            font-size: 14px;
+                            padding: 0 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown-megamenu {
+        .megamenu-block {
+            .megamenu-block-title {
+                font-size: 15px !important;
+                margin: 0 !important;
+                font-weight: 500;
+                padding: 25px 10px 10px 10px !important;
+
+                i {
+                    display: none;
+                }
+            }
+            .megamenu-block-list {
+                li {
+                    a {
+                        font-size: 14px;
+                        padding: 6px 10px !important;
+
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ms-paper {
+        animation-name: shadow-retard, slideInUpTiny;
+        animation-duration: 5s, 1.4s;
+
+        & > .row {
+            overflow: hidden;
+
+            & > [class*="col-"]{
+                margin-bottom: 0 !important;
+                padding-bottom: 0 !important;
+            }
+
+            .ms-paper-menu-left-container {
+                padding-right: 15px;
+                animation-name: slideInUp;
+
+                .ms-paper-menu-left  {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+
+                    .ms-paper-menu-title {
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ms-paper-content-container {
+            padding-left: 15px !important;
+
+
+            .ms-paper-content {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ms-header {
+        display: none;
+    }
+
+    .container-full {
+        min-width: 100%;
+        padding: 0;
+    }
+
+    .ms-navbar.navbar {
+        .container {
+            width: 100%;
+
+            .navbar-header {
+                display: flex;
+
+                .ms-title {
+                    display: block;
+                }
+            }
+
+            .btn-navbar-menu {
+                display: block;
+            }
+        }
+    }
+
+    .ms-paper {
+        margin-top: -40px;
+
+        & > .row {
+            margin: 0;
+            & > [class*="col-"]{
+                margin-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .ms-paper-menu-left-container,
+            .ms-paper-content-container {
+                padding-left: 0 !important;
+            }
+
+            .ms-paper-menu-left-container {
+                .ms-paper-menu-left  {
+                    .ms-paper-menu-title {
+                        background-color: darken($color-primary, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 550px) {
+    .ms-paper-menu-title {
+        text-align: left !important;
+        padding-left: 3rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .ms-paper-menu-title {
+        a {
+            i {
+                right: 3rem !important;
+            }
+        }
+    }
+
+    .dl-horizontal dt {
+        float: left;
+        width: 160px;
+        overflow: hidden;
+        clear: left;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .panel-menu {
+        display: block !important;
+    }
+}

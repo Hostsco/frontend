@@ -1,0 +1,129 @@
+.badge {
+    border-radius: 2px;
+    padding: 4px 7px;
+    vertical-align: middle;
+    color: #fff;
+    align-self: center;
+
+    &.badge-default {
+        background-color: $color-alt;
+    }
+
+    &.pull-right {
+        //margin-top: 5px;
+    }
+
+    &.badge-white {
+        background-color: #fff;
+        color: $color-dark;
+    }
+}
+
+.active {
+    & > .badge {
+        background-color: #fff;
+        color: $color-primary;
+    }
+}
+
+.badge-pill {
+    background-color: $color-alt;
+    color: #fff;
+    display: inline-block;
+    margin: 0 0 0 4px;
+    padding: 0 5px;
+    font-size: 11px;
+    font-weight: 400;
+    height: 25px;
+    min-width: 25px;
+    border-radius: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    transition: all ease 0.3s;
+
+    &.badge-pill-square {
+        border-radius: 0;
+    }
+
+    &.badge-pill-round {
+        border-radius: 5px;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &.badge-pill-primary {
+        background-color: $color-primary;
+    }
+
+    &.badge-pill-info {
+        background-color: $color-info;
+    }
+
+    &.badge-pill-royal {
+        background-color: $color-royal;
+    }
+
+    &.badge-pill-warning {
+        background-color: $color-warning;
+    }
+
+    &.badge-pill-danger {
+        background-color: $color-danger;
+    }
+
+    &.badge-pill-success {
+        background-color: $color-success;
+    }
+
+    &.badge-pill-orange {
+        background-color: $mdc-orange-700;
+    }
+
+    &.badge-pill-pink {
+        background-color: $mdc-pink-A400;
+    }
+}
+
+.btn-circle {
+    .badge-pill {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.nav.nav-stacked,
+.list-group {
+
+    .badge-pill,
+    .badge {
+        //margin-top: 5px;
+    }
+
+    .list-group-item {
+        color: $color-dark;
+
+        &:hover,
+        &:focus {
+            background-color: $color-light;
+            color: $color-primary;
+        }
+
+        &.active {
+            color: #fff;
+            background-color: $color-primary;
+
+            .badge-pill {
+                color: $color-primary-dark;
+                background-color: #fff;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: $color-primary-dark;
+            }
+        }
+    }
+}

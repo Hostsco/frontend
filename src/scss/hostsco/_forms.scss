@@ -1,0 +1,43 @@
+// Daterange
+input, select, .btn.dropdown-toggle {
+  text-transform: none;
+  font-size: 16px;
+}
+.input-daterange input {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+.input-daterange input:last-child {
+  margin-left: 15px !important;
+  margin-right: 0px;
+}
+.input-daterange input::placeholder {
+  color: rgba(0,0,0,.87) !important;
+}
+.form-group .form-control::placeholder {
+  color: rgba(0,0,0,.87) !important;
+}
+
+//Inputs
+.form-control {
+  padding-left: 10px;
+}
+
+// Bootstrap Select
+.bootstrap-select .dropdown-menu ul li a {
+  font-size: 1.6rem;
+}
+.bootstrap-select button .filter-option .filter-option-inner .filter-option-inner-inner {
+  margin-top: -4px;
+}
+
+
+
+//Form row
+
+.form-row > .col {
+  padding-left: 15px;
+  padding-right: 15px;
+}

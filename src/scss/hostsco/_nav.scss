@@ -1,0 +1,110 @@
+// -----------------------------------------------------------------------------
+// Nav
+// -----------------------------------------------------------------------------
+.ms-navbar.navbar-mode .navbar-collapse, .ms-lead-navbar.navbar-mode .navbar-collapse {
+    margin-right: 0px;
+}
+.ms-lead-navbar {
+    position: relative !important;
+    height: 60px;
+
+    .nav-item button.btn {
+        margin-top: 5px;
+        padding-top: 12px;
+        margin-right: 20px;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-start;
+        height: 50px;
+        z-index: 1140;
+
+        .navbar-nav {
+            align-self: stretch;
+
+            .nav-item {
+                display: flex;
+
+                & > a {
+                    padding: 0;
+                    //min-width: 100px;
+                    padding: 0 2rem;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    position: relative;
+                    overflow: hidden;
+                    font-size: 1.4rem;
+                    color: #fff;
+                    height: 54px;
+
+                    &:after {
+                        display: none;
+                        height: 0;
+                        width: 0;
+                    }
+
+                    &:before {
+                        display: none;
+                        height: 0;
+                        width: 0;
+                    }
+
+                    & > i {
+                        margin-left: 10px;
+                        transition: transform ease .5s;
+                        will-change: transform;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $color-primary;
+
+                        &:before {
+                            height: 100%;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+.ms-navbar .navbar-header .navbar-brand, .ms-lead-navbar .navbar-header .navbar-brand {
+    align-items: center;
+    margin-top: -3px;
+}
+
+.ms-lead-navbar.navbar-mode .btn-navbar-menu {
+    display: none;
+}
+@media (max-width: 767px) {
+    .ms-lead-navbar.navbar-mode .btn-navbar-menu {
+        display: block;
+        overflow: hidden;
+        font-size: 2.1rem;
+        color: #fff;
+        height: 50px;
+        position: absolute;
+        top: 2px;
+        right: 0;
+        border: 0;
+        padding: 0;
+        line-height: 1;
+        margin: 0;
+        min-width: 50px;
+        width: 50px;
+        line-height: 62px;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+}
+.navbar-right {
+    margin-top: -1px;
+}

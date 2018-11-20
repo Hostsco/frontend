@@ -1,0 +1,28 @@
+.progress {
+    background-color: $color-light-dark;
+    margin-bottom: 2rem;
+    height: 20px;
+
+    .progress-bar {
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+
+    &.progress-sm {
+        height: 10px;
+    }
+
+    &.progress-xs {
+        height: 5px;
+        .progress-bar {
+        }
+    }
+    &.progress-lg {
+        height: 30px;
+        line-height: 30px;
+    }
+
+}

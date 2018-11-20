@@ -1,0 +1,232 @@
+<!-- build:include layout/header.html --><!-- /build -->
+
+<div class="material-background"></div>
+
+<div class="container container-full">
+    <div class="ms-paper">
+        <div class="row">
+            <!-- build:componentsMenu component-slider.html --><!-- /build -->
+            <div class="col-lg-9 ms-paper-content-container">
+                <div class="ms-paper-content">
+                    <h1>Sliders</h1>
+
+                    <p class="alert alert-light alert-royal">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <i class="fa fa-info-circle"></i> You can know more about this plugin and how to work with it from javascript on its  <a href="http://seiyria.com/bootstrap-slider/">official website</a>.
+                    </p>
+                    <section class="ms-component-section">
+                        <h2 class="section-title no-margin-top">Basic Slider</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>With Focus</h3>
+                                <input class="ms-slider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-focus="true" />
+                                <p class="small text-center">Range: 0 - 100 | Steps: 1</p>
+                                <input class="ms-slider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="50" data-slider-focus="true" />
+                                <p class="small text-center">Range: 0 - 100 | Steps: 10</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Without Focus</h3>
+                                <input class="ms-slider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"  />
+                                <p class="small text-center">Range: 0 - 20 | Steps: 1</p>
+                                <input class="ms-slider" data-slider-id='ex1Slider' type="text" data-slider-min="-10" data-slider-max="10" data-slider-step="2" data-slider-value="0" />
+                                <p class="small text-center">Range: -10 - 10 | Steps: 2</p>
+                            </div>
+                            <div class="col-md-12">
+                                <h3>Full Width Example</h3>
+                                <input class="ms-slider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-focus="true" />
+                                <h3>Specific width</h3>
+                                <div style="max-width: 200px">
+                                    <input class="ms-slider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-focus="true" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="dotted">
+
+                        <div class="card card-info card-code">
+                            <div class="card-header card-code-header" role="tab" id="codeHead1">
+                                <h4 class="panel-title card-code-title">
+                                    <a class="collapsed withripple" role="button" data-toggle="collapse" href="#code1" aria-expanded="false" aria-controls="code1">
+                                        <i class="zmdi zmdi-code"></i> Show Code
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="code1" class="card-collapse collapse" role="tabpanel" aria-labelledby="codeHead1">
+                                <div class="card-code-block">
+<pre><code class="language-markup line-numbers">&lt;input class=&quot;ms-slider&quot; data-slider-id='ex1Slider' type=&quot;text&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;50&quot; data-slider-focus=&quot;true&quot; /&gt;
+
+&lt;input class=&quot;ms-slider&quot; data-slider-id='ex1Slider' type=&quot;text&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;10&quot; data-slider-value=&quot;50&quot; data-slider-focus=&quot;true&quot; /&gt;
+
+&lt;input class=&quot;ms-slider&quot; data-slider-id='ex1Slider' type=&quot;text&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;20&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;14&quot;  /&gt;
+
+&lt;input class=&quot;ms-slider&quot; data-slider-id='ex1Slider' type=&quot;text&quot; data-slider-min=&quot;-10&quot; data-slider-max=&quot;10&quot; data-slider-step=&quot;2&quot; data-slider-value=&quot;0&quot; /&gt;
+
+&lt;input class=&quot;ms-slider&quot; data-slider-id='ex1Slider' type=&quot;text&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;50&quot; data-slider-focus=&quot;true&quot; /&gt;
+
+&lt;input class=&quot;ms-slider&quot; data-slider-id='ex1Slider' type=&quot;text&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;50&quot; data-slider-focus=&quot;true&quot; /&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div> <!-- card-code -->
+                    </section>
+                    <section class="ms-component-section">
+                        <h2 class="section-title">Advance Sliders</h2>
+                        <h3>Range selector</h3>
+                        <input type="text" class="ms-slider" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[150,550]"/>
+
+                        <h3>With Solid Handle</h3>
+                        <input type="text" class="ms-slider" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="RC" data-slider-tooltip="hide" data-slider-handle="custom" />
+
+
+                        <h3>Without Tooltip</h3>
+                        <input type="text" class="ms-slider" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="RC" data-slider-tooltip="hide" data-slider-tooltip="hide" />
+
+                        <input type="text" class="ms-slider" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[300,950]" data-slider-tooltip="hide" />
+
+                        <h3>Disabled</h3>
+
+                        <input id="ex7" type="text" class="ms-slider" data-slider-min="0"  data-slider-max="20" data-slider-step="1" data-slider-value="5" data-slider-enabled="false"/>
+
+                        <input type="text" class="ms-slider" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[150,550]" data-slider-enabled="false" />
+
+                        <hr class="dotted">
+
+                        <div class="card card-info card-code">
+                            <div class="card-header card-code-header" role="tab" id="codeHead2">
+                                <h4 class="panel-title card-code-title">
+                                    <a class="collapsed withripple" role="button" data-toggle="collapse" href="#code2" aria-expanded="false" aria-controls="code2">
+                                        <i class="zmdi zmdi-code"></i> Show Code
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="code2" class="card-collapse collapse" role="tabpanel" aria-labelledby="codeHead2">
+                                <div class="card-code-block">
+<pre><code class="language-markup line-numbers">&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; value=&quot;&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;255&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;128&quot; data-slider-id=&quot;RC&quot; data-slider-tooltip=&quot;hide&quot; data-slider-tooltip=&quot;hide&quot; /&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; value=&quot;&quot; data-slider-min=&quot;10&quot; data-slider-max=&quot;1000&quot; data-slider-step=&quot;5&quot; data-slider-value=&quot;[300,950]&quot; data-slider-tooltip=&quot;hide&quot; /&gt;
+
+&lt;h3&gt;Disabled&lt;/h3&gt;
+
+&lt;input id=&quot;ex7&quot; type=&quot;text&quot; class=&quot;ms-slider&quot; data-slider-min=&quot;0&quot;  data-slider-max=&quot;20&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;5&quot; data-slider-enabled=&quot;false&quot;/&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; value=&quot;&quot; data-slider-min=&quot;10&quot; data-slider-max=&quot;1000&quot; data-slider-step=&quot;5&quot; data-slider-value=&quot;[150,550]&quot; data-slider-enabled=&quot;false&quot; /&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div> <!-- card-code -->
+                    </section>
+                    <section class="ms-component-section">
+                        <h2 class="section-title">Vertical Slider</h2>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <input class="ms-slider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="40" data-slider-orientation="vertical" data-slider-reversed="true" />
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="ms-slider" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="20" data-slider-orientation="vertical" data-slider-reversed="true" />
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="ms-slider" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-orientation="vertical" data-slider-reversed="true" data-slider-focus="true" />
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="ms-slider" data-slider-min="0" data-slider-max="100" data-slider-step="1"  data-slider-orientation="vertical" data-slider-reversed="true" data-slider-handle="custom" />
+                            </div>
+                        </div>
+
+                        <hr class="dotted">
+
+                        <div class="card card-info card-code">
+                            <div class="card-header card-code-header" role="tab" id="codeHead3">
+                                <h4 class="panel-title card-code-title">
+                                    <a class="collapsed withripple" role="button" data-toggle="collapse" href="#code3" aria-expanded="false" aria-controls="code3">
+                                        <i class="zmdi zmdi-code"></i> Show Code
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="code3" class="card-collapse collapse" role="tabpanel" aria-labelledby="codeHead3">
+                                <div class="card-code-block">
+<pre><code class="language-markup line-numbers">&lt;input class=&quot;ms-slider&quot; type=&quot;text&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;40&quot; data-slider-orientation=&quot;vertical&quot; data-slider-reversed=&quot;true&quot; /&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;20&quot; data-slider-orientation=&quot;vertical&quot; data-slider-reversed=&quot;true&quot; /&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;50&quot; data-slider-orientation=&quot;vertical&quot; data-slider-reversed=&quot;true&quot; data-slider-focus=&quot;true&quot; /&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;1&quot;  data-slider-orientation=&quot;vertical&quot; data-slider-reversed=&quot;true&quot; data-slider-handle=&quot;custom&quot; /&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div> <!-- card-code -->
+                    </section>
+                    <section class="ms-component-section">
+                        <h2 class="section-title">Tick Marks &amp; Labels</h2>
+
+                        <h3>With All Values</h3>
+                        <input type="text" class="ms-slider" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="5" data-slider-value="200" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]'/>
+
+                        <h3>With Fixed Values</h3>
+                        <input type="text" class="ms-slider" data-slider-ticks="[0, 1000, 2000, 3000, 4000]" data-slider-ticks-snap-bounds="100" data-slider-step="100" data-slider-value="0" data-slider-ticks-labels='["$0", "$1000", "$2000", "$3000", "$4000"]'/>
+
+                        <h3>Responsive Examples</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>With All Values</h3>
+                                <input type="text" class="ms-slider" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="5" data-slider-value="200" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]'/>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>With Fixed Values</h3>
+                                <input type="text" class="ms-slider" data-slider-ticks="[0, 1000, 2000, 3000, 4000]" data-slider-ticks-snap-bounds="100" data-slider-step="100" data-slider-value="0" data-slider-ticks-labels='["$0", "$1000", "$2000", "$3000", "$4000"]'/>
+                            </div>
+                        </div>
+
+                        <h3>With Only Tick Values</h3>
+                        <input type="text"
+                              data-provide="slider"
+                              data-slider-ticks="[1, 2, 3]"
+                              data-slider-ticks-labels='["short", "medium", "long"]'
+                              data-slider-min="1"
+                              data-slider-max="3"
+                              data-slider-step="1"
+                              data-slider-value="3"
+                              data-slider-tooltip="hide"
+                        />
+
+                        <hr class="dotted">
+
+                        <div class="card card-info card-code">
+                            <div class="card-header card-code-header" role="tab" id="codeHead4">
+                                <h4 class="panel-title card-code-title">
+                                    <a class="collapsed withripple" role="button" data-toggle="collapse" href="#code4" aria-expanded="false" aria-controls="code4">
+                                        <i class="zmdi zmdi-code"></i> Show Code
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="code4" class="card-collapse collapse" role="tabpanel" aria-labelledby="codeHead4">
+                                <div class="card-code-block">
+<pre><code class="language-markup line-numbers">&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; data-slider-ticks=&quot;[0, 100, 200, 300, 400]&quot; data-slider-ticks-snap-bounds=&quot;5&quot; data-slider-value=&quot;200&quot; data-slider-ticks-labels='[&quot;$0&quot;, &quot;$100&quot;, &quot;$200&quot;, &quot;$300&quot;, &quot;$400&quot;]'/&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; data-slider-ticks=&quot;[0, 1000, 2000, 3000, 4000]&quot; data-slider-ticks-snap-bounds=&quot;100&quot; data-slider-step=&quot;100&quot; data-slider-value=&quot;0&quot; data-slider-ticks-labels='[&quot;$0&quot;, &quot;$1000&quot;, &quot;$2000&quot;, &quot;$3000&quot;, &quot;$4000&quot;]'/&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; data-slider-ticks=&quot;[0, 100, 200, 300, 400]&quot; data-slider-ticks-snap-bounds=&quot;5&quot; data-slider-value=&quot;200&quot; data-slider-ticks-labels='[&quot;$0&quot;, &quot;$100&quot;, &quot;$200&quot;, &quot;$300&quot;, &quot;$400&quot;]'/&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;ms-slider&quot; data-slider-ticks=&quot;[0, 1000, 2000, 3000, 4000]&quot; data-slider-ticks-snap-bounds=&quot;100&quot; data-slider-step=&quot;100&quot; data-slider-value=&quot;0&quot; data-slider-ticks-labels='[&quot;$0&quot;, &quot;$1000&quot;, &quot;$2000&quot;, &quot;$3000&quot;, &quot;$4000&quot;]'/&gt;
+
+&lt;input type=&quot;text&quot;
+      data-provide=&quot;slider&quot;
+      data-slider-ticks=&quot;[1, 2, 3]&quot;
+      data-slider-ticks-labels='[&quot;short&quot;, &quot;medium&quot;, &quot;long&quot;]'
+      data-slider-min=&quot;1&quot;
+      data-slider-max=&quot;3&quot;
+      data-slider-step=&quot;1&quot;
+      data-slider-value=&quot;3&quot;
+      data-slider-tooltip=&quot;hide&quot;
+/&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div> <!-- card-code -->
+                    </section>
+                </div> <!-- ms-paper-content -->
+            </div> <!-- col-lg-9 -->
+        </div> <!-- row -->
+    </div> <!-- ms-paper -->
+</div> <!-- container -->
+
+<!-- build:include layout/footer.html --><!-- /build -->

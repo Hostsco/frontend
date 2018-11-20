@@ -1,0 +1,273 @@
+<!-- build:include layout/header.html --><!-- /build -->
+
+<div class="material-background"></div>
+
+<div class="container container-full">
+    <div class="ms-paper">
+        <div class="row">
+            <!-- build:componentsMenu component-tooltip.html --><!-- /build -->
+            <div class="col-lg-9 ms-paper-content-container">
+                <div class="ms-paper-content">
+                    <h1>Tooltip &amp; Popover</h1>
+                    <section class="ms-component-section">
+                        <h2 class="section-title no-margin-top">Basic Tooltip</h2>
+
+                        <button class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip left</button>
+
+                        <button class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip top</button>
+
+                        <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip bottom</button>
+
+                        <button class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip right</button>
+
+
+                        <h3>With Color</h3>
+
+                        <button
+                            class="btn btn-primary"
+
+                            data-toggle="tooltip"
+                            data-template="<div class=&quot;tooltip tooltip-primary&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner&quot;></div></div>"
+                            data-placement="left"
+                            title="Tooltip Primary">
+                            Tooltip Primary
+                        </button>
+
+                        <button
+                            class="btn btn-info"
+
+                            data-toggle="tooltip"
+                            data-template="<div class=&quot;tooltip tooltip-info&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner&quot;></div></div>"
+                            data-placement="top"
+                            title="Tooltip Info">
+                            Tooltip Info
+                        </button>
+
+                        <button
+                            class="btn btn-danger"
+
+                            data-toggle="tooltip"
+                            data-template="<div class=&quot;tooltip tooltip-danger&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner&quot;></div></div>"
+                            data-placement="right"
+                            title="Tooltip Danger">
+                            Tooltip Danger
+                        </button>
+
+                        <button
+                            class="btn btn-warning"
+
+                            data-toggle="tooltip"
+                            data-template="<div class=&quot;tooltip tooltip-warning&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner&quot;></div></div>"
+                            data-placement="bottom"
+                            title="Tooltip Warning">
+                            Tooltip Warning
+                        </button>
+
+                        <button
+                            class="btn btn-success"
+
+                            data-toggle="tooltip"
+                            data-template="<div class=&quot;tooltip tooltip-success&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner&quot;></div></div>"
+                            data-placement="left"
+                            title="Tooltip Success">
+                            Tooltip Success
+                        </button>
+
+                        <button
+                            class="btn btn-royal"
+
+                            data-toggle="tooltip"
+                            data-template="<div class=&quot;tooltip tooltip-royal&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner&quot;></div></div>"
+                            data-placement="top"
+                            title="Tooltip Royal">
+                            Tooltip Royal
+                        </button>
+
+                        <button
+                            class="btn btn-default"
+
+                            data-toggle="tooltip"
+                            data-template="<div class=&quot;tooltip tooltip-dark&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner&quot;></div></div>"
+                            data-placement="right"
+                            title="Tooltip Dark">
+                            Tooltip Dark
+                        </button>
+
+                        <button
+                            class="btn btn-default"
+
+                            data-toggle="tooltip"
+                            data-template="<div class=&quot;tooltip tooltip-light&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner&quot;></div></div>"
+                            data-placement="bottom"
+                            title="Tooltip Light">
+                            Tooltip Light
+                        </button>
+
+
+                        <hr class="dotted">
+
+                        <div class="card card-info card-code">
+                            <div class="card-header card-code-header" role="tab" id="codeHead1">
+                                <h4 class="panel-title card-code-title">
+                                    <a class="collapsed withripple" role="button" data-toggle="collapse" href="#code1" aria-expanded="false" aria-controls="code1">
+                                        <i class="zmdi zmdi-code"></i> Show Code
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="code1" class="card-collapse collapse" role="tabpanel" aria-labelledby="codeHead1">
+                                <div class="card-code-block">
+<pre><code class="language-markup line-numbers">&lt;h2 class=&quot;section-title no-margin-top&quot;&gt;Basic Tooltip&lt;/h2&gt;
+
+&lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;/button&gt;
+
+
+&lt;h3&gt;With Color&lt;/h3&gt;
+&lt;button
+    class=&quot;btn btn-primary&quot;
+
+    data-toggle=&quot;tooltip&quot;
+    data-template=&quot;&lt;div class=&quot;tooltip tooltip-primary&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+    data-placement=&quot;left&quot;
+    title=&quot;Tooltip Primary&quot;&gt;
+    Tooltip Primary
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;btn btn-info&quot;
+
+    data-toggle=&quot;tooltip&quot;
+    data-template=&quot;&lt;div class=&quot;tooltip tooltip-info&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+    data-placement=&quot;top&quot;
+    title=&quot;Tooltip Info&quot;&gt;
+    Tooltip Info
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;btn btn-danger&quot;
+
+    data-toggle=&quot;tooltip&quot;
+    data-template=&quot;&lt;div class=&quot;tooltip tooltip-danger&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+    data-placement=&quot;right&quot;
+    title=&quot;Tooltip Danger&quot;&gt;
+    Tooltip Danger
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;btn btn-warning&quot;
+
+    data-toggle=&quot;tooltip&quot;
+    data-template=&quot;&lt;div class=&quot;tooltip tooltip-warning&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+    data-placement=&quot;bottom&quot;
+    title=&quot;Tooltip Warning&quot;&gt;
+    Tooltip Warning
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;btn btn-success&quot;
+
+    data-toggle=&quot;tooltip&quot;
+    data-template=&quot;&lt;div class=&quot;tooltip tooltip-success&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+    data-placement=&quot;left&quot;
+    title=&quot;Tooltip Success&quot;&gt;
+    Tooltip Success
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;btn btn-royal&quot;
+
+    data-toggle=&quot;tooltip&quot;
+    data-template=&quot;&lt;div class=&quot;tooltip tooltip-royal&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+    data-placement=&quot;top&quot;
+    title=&quot;Tooltip Royal&quot;&gt;
+    Tooltip Royal
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;btn btn-default&quot;
+
+    data-toggle=&quot;tooltip&quot;
+    data-template=&quot;&lt;div class=&quot;tooltip tooltip-dark&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+    data-placement=&quot;right&quot;
+    title=&quot;Tooltip Dark&quot;&gt;
+    Tooltip Dark
+&lt;/button&gt;
+
+&lt;button
+    class=&quot;btn btn-default&quot;
+
+    data-toggle=&quot;tooltip&quot;
+    data-template=&quot;&lt;div class=&quot;tooltip tooltip-light&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+    data-placement=&quot;bottom&quot;
+    title=&quot;Tooltip Light&quot;&gt;
+    Tooltip Light
+&lt;/button&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div> <!-- card-code -->
+                    </section>
+
+                    <section class="ms-component-section">
+                        <h2 class="section-title no-margin-top">Popover</h2>
+
+                        <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" title="Popover Title" data-content="Lorem ipsum dolor sit amet domi consectetur  adipisicing elit. Excepturi ab ipsum dolorem. Itaque qui intsuct distinctio.">
+                        Popover on left
+                        </button>
+
+                        <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover on top
+                        </button>
+
+                        <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                        sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover on bottom
+                        </button>
+
+                        <button class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        Popover on right
+                        </button>
+
+                        <hr class="dotted">
+
+                        <div class="card card-info card-code">
+                            <div class="card-header card-code-header" role="tab" id="codeHead2">
+                                <h4 class="panel-title card-code-title">
+                                    <a class="collapsed withripple" role="button" data-toggle="collapse" href="#code2" aria-expanded="false" aria-controls="code2">
+                                        <i class="zmdi zmdi-code"></i> Show Code
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="code2" class="card-collapse collapse" role="tabpanel" aria-labelledby="codeHead2">
+                                <div class="card-code-block">
+<pre><code class="language-markup line-numbers">&lt;h2 class=&quot;section-title no-margin-top&quot;&gt;Popover&lt;/h2&gt;
+
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; title=&quot;Popover Title&quot; data-content=&quot;Lorem ipsum dolor sit amet domi consectetur  adipisicing elit. Excepturi ab ipsum dolorem. Itaque qui intsuct distinctio.&quot;&gt;
+Popover on left
+&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+Popover on top
+&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+Popover on bottom
+&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+Popover on right
+&lt;/button&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div> <!-- card-code -->
+                    </section>
+                </div> <!-- ms-paper-content -->
+            </div> <!-- col-lg-9 -->
+        </div> <!-- row -->
+    </div> <!-- ms-paper -->
+</div> <!-- container -->
+
+<!-- build:include layout/footer.html --><!-- /build -->

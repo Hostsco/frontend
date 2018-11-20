@@ -1,0 +1,353 @@
+.checkbox {
+    label {
+        margin-right: 2rem;
+
+        .checkbox-material {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.bootstrap-select {
+    position: relative;
+    //padding-top: 20px !important;
+    margin-top: 10px;
+    
+    .dropdown-toggle:focus {
+      outline: none !important;
+      background-color: transparent;
+    }
+
+    button {
+        background-color: transparent !important;
+        box-shadow: none !important;
+
+        .filter-option {
+            top: -10px !important;
+            position: absolute !important;
+
+           .filter-option-inner {
+               .filter-option-inner-inner {
+                margin-bottom: 1rem;
+               }
+           }
+        }
+    }
+
+    &:after {
+        content: '\f2f9';
+        font-family: 'Material-Design-Iconic-Font';
+        text-align: right;
+        display: inline-block;
+        top: 10px;
+        right: 20px;
+        position: absolute;
+    }
+
+    .dropdown-menu {
+        top: 0;
+        padding: 0;
+        position: absolute;
+        transform: none !important;
+        border-radius: 0;
+        display: block;
+        transform: scale(0) !important;
+        transform-origin: top center;
+        transition: transform ease .2s;
+        will-change: transform;
+
+        ul {
+            li {
+                &.hidden {
+                    display: none;
+                }
+                
+                a {
+                    padding: 1rem 2rem ;
+                    transition: all ease 0.5s;
+                    //display: block;
+                    color: $color-dark;
+                    font-size: 1.4rem;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background-color: $color-light-dark;
+                        color: #000;
+                    }
+                }
+
+                &.selected {
+                    a {
+                        background-color: $color-light-dark;
+                        color: #000;
+                        position: relative;
+
+                        .check-mark {
+                            display: none !important;
+                        }
+
+                        &:after {
+                            content: '\f26b';
+                            font-family: 'Material-Design-Iconic-Font';
+                            text-align: right;
+                            display: inline-block;
+                            top: 10px;
+                            right: 20px;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.show {
+            transform: scale(1) !important;
+        }
+    }
+}
+
+.form-group {
+    .input-group-addon {
+        padding-left: 2px;
+        i {
+            font-size: 18px;
+        }
+    }
+
+    label {
+        color: $color-medium-dark !important;
+
+    }
+    &.is-focused {
+        .radio {
+
+            label {
+                //color: #f00 !important;
+                transition: all ease .3s;
+
+                &:hover,
+                &:focus {
+                    color: $color-dark-light !important;
+                }
+            }
+        }
+    }
+}
+
+.form-inverse {
+    .radio {
+        label {
+            span {
+                border-color: $color-light;
+            }
+        }
+    }
+
+
+
+    input[type=checkbox] {
+        & + .checkbox-material {
+            .check {
+                border-color: $color-light;
+            }
+        }
+
+        &:checked {
+            & + .checkbox-material .check {
+                background-color: $color-light;
+            }
+        }
+    }
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+.form-control-number {
+    width: 60px !important;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    //margin-top: -30px !important;
+}
+
+.form-inline {
+    display: inline-block;
+
+    & > * {
+        display: inline-block !important;
+    }
+}
+
+label.color-white {
+    color: #fff !important;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.input-group-addon {
+    display: flex;
+    vertical-align: middle;
+    font-size: 1.4rem;
+    padding-right: 1.2rem;
+}
+
+.label-floating {
+    /*
+    .input-group {
+        display: table;
+        width: 100%;
+
+        .input-group-addon,
+        .input-group-btn {
+            display: table-cell;
+            width:1%;
+        }
+
+        .form-control {
+            display: inline-block !important;
+            width: 100%;
+            //position: static !important;
+        }
+    }
+    */
+}
+
+.datepicker {
+    font-size: 1.4rem;
+    padding: 2rem;
+    //animation-name: fadeInLeftTiny;
+    //animation-duration: .5s;
+    &:before,
+    &:after {
+        display: none;
+    }
+
+    .datepicker-months,
+    .datepicker-years,
+    .datepicker-decades,
+    .datepicker-centuries {
+        tr {
+            td {
+                span {
+                    &.focused {
+                        background-color: transparent;
+                        color: $color-primary;
+                    }
+
+                    &.active {
+                        background-color: $color-primary !important;
+                        color: #fff !important;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        background-color: $color-primary;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .datepicker-days {
+        table {
+            font-size: 1.4rem;
+            color: $color-dark;
+
+            td {
+                cursor: pointer;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+
+                &.cw {
+                    cursor: default;
+                }
+            }
+
+            thead {
+
+                th {
+                    text-align: center;
+
+                    &.prev,
+                    &.next {
+                        cursor: pointer;
+                        transition: all ease .3s;
+                        border-radius: 100%;
+                        width: 35px;
+                        height: 35px;
+
+                        &:hover {
+                            background-color: $color-primary;
+                            color: #fff;
+
+                        }
+                    }
+                }
+
+                tr {
+                }
+            }
+
+            tbody {
+
+                td {
+                    transition: all ease .3s;
+                    border-radius: 100%;
+
+                    &.day {
+                        position: relative;
+                    }
+
+                    &:before {
+                        transition: all ease .3s;
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        border-radius: 100%;
+                        top: 50%;
+                        left: 50%;
+                        background-color: $color-primary;
+                        z-index: -10;
+                        height: 0%;
+                        width: 0%;
+                    }
+
+                    &.highlighted,
+                    &.today {
+                        color: $color-primary;
+                        background-color: transparent;
+                    }
+
+                    &.old {
+                        color: $color-medium;
+                    }
+
+                    &:hover,
+                    &.active {
+                        &:before {
+                            height: 100%;
+                            width: 100%;
+                            top: 0;
+                            left: 0;
+                        }
+                        color: #fff;
+                        background-color: transparent;
+                    }
+
+                    &.cw {
+                        background-color: transparent;
+                        color: $color-info;
+                    }
+                }
+            }
+        }
+    }
+}

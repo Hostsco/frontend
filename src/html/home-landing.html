@@ -1,0 +1,102 @@
+<!-- build:include layout/header.html --><!-- /build -->
+
+<div class="ms-hero-img-bedroom ms-hero-bg-dark-transparent color-white hero-full-screen" id="home">
+    <div class="intro-fixed-content index-1">
+        <div class="container">
+
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <h1 class="animated fadeInUp animation-delay-5">Go stay anywhere today</h1>
+                <div class="card card-primary animated fadeInUp animation-delay-7">
+                    <div class="card-body">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <div class="row form-row">
+                                    <div class="col">
+                                        <div class="form-group form-group-select">
+                                           <select id="selectWhere" class="form-control selectpicker" data-live-search="true" data-dropup-auto="false">
+                                               <option selected>Where do you want to go?</option>
+                                               <option>Bali</option>
+                                               <option>Hawaii</option>
+                                               <option>Miami</option>
+                                               <option>Green Bay</option>
+                                               <option>Sevilla</option>
+                                           </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-row">
+                                        <div class="col">
+                                            <div class="form-group form-group-datepicker">
+                                                <div class="input-daterange input-group" id="datepicker">
+                                                    <input id="dateArrival" type="text" class="input form-control" name="start" placeholder="Arrival" />
+                                                    <input id="dateDeparture" type="text" class="input form-control" name="end" placeholder="Departure" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="row form-row">
+                                        <div class="col">
+                                            <div class="form-group form-group-select">
+                                                <select id="travellers" class="form-control selectpicker" data-dropup-auto="false">
+                                                    <option selected>2 adults</option>
+                                                    <option>1 adult</option>
+                                                    <option>2 adults</option>
+                                                    <option>3 adults</option>
+                                                    <option>4 adults</option>
+                                                    <option>5 adults</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group form-group-select">
+                                                <select id="travellers" class="form-control selectpicker" data-dropup-auto="false">
+                                                    <option selected>No children</option>
+                                                    <option>1 child</option>
+                                                    <option>2 children</option>
+                                                    <option>3 children</option>
+                                                    <option>4 children</option>
+                                                    <option>5 children</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="row form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-raised btn-primary">Let's go</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="btn-back-top">
+    <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised "><i class="zmdi zmdi-long-arrow-up"></i></a>
+</div>
+
+<div class="bg-light index-1" id="">
+    <!-- build:include layout/foot.html --><!-- /build -->
+</div>
+
+
+</div> <!-- ms-site-container -->
+
+    <!-- build:include layout/slidebar-lead.html --><!-- /build -->
+    <!-- build:include layout/footer/scripts.html --><!-- /build -->
+    <script src="<%= assets %>/js/lead.js"></script>
+    <script>
+        $('.input-daterange').datepicker({
+            todayHighlight: true,
+        });
+    </script>
+
+
+</body>
+</html>

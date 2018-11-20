@@ -1,0 +1,110 @@
+.ms-collapse {
+    margin-bottom: 1.5rem;
+
+    .card {
+        border: 0;
+        border-radius: 0px;
+        margin-top: 5px;
+
+        .card-block, .card-body {
+            border-top: solid 1px $color-medium-light;
+        }
+
+        .card-header {
+            padding: 0;
+            border-radius: 0px;
+
+            .card-title {
+                a {
+                    display: block;
+                    color: $color-dark;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 1rem;
+                    padding: 1.4rem 1.5rem;
+                    position: relative;
+
+                    i {
+                        font-size: 1.6rem;
+                        margin-right: 1rem;
+                        transition: all ease 0.4s;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: none;
+                    }
+
+                    &:after {
+                        position: absolute;
+                        right: 2.5rem;
+                        top: 1.7rem;
+                        font-family: 'FontAwesome';
+                        content: "\f107";
+                        transform: rotate(0);
+                        transition: all ease 0.4s;
+                    }
+                }
+
+                a.collapsed {
+                    i {
+                        //transform: rotate(180deg);
+                    }
+                    &:after {
+                        //content: "\f104";
+                        transform: rotate(90deg);
+                    }
+                }
+
+                &.ms-rotate-icon {
+                    a.collapsed {
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @each $n, $c in $color-list {
+        .card-#{$n} {
+            .card-header {
+                padding: 0;
+                background-color: $c;
+
+                .card-title {
+                    a {
+                        display: block;
+                        color: #fff !important;
+                    }
+                }
+            }
+
+            .card-collapse {
+                .card-block, .card-body {
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    &.no-margin {
+        .card {
+            border-radius: 2px;
+            margin: 0 !important;
+        }
+    }
+}
+
+.card {
+    .ms-collapse {
+        margin: 0;
+
+        .card {
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.tooltip {
+    .tooltip-inner {
+        font-family: "Roboto";
+        font-size: 12px;
+        color: #fff;
+        padding: 5px;
+        animation: zoomIn;
+        animation-duration: .5s;
+        display: none;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &.in, &.show {
+        .tooltip-inner {
+            display: block;
+        }
+    }
+
+    &.in {
+        .tooltip-inner {
+            animation-fill-mode: backwards;
+            animation-delay: 0.2s;
+        }
+    }
+}
+
+@each $n, $c in $color-list {
+    .tooltip-#{$n} {
+        .tooltip-inner  {
+            background-color: $c;
+        }
+    }
+}
+
+.tooltip-light {
+    .tooltip-inner  {
+        color: $color-dark;
+    }
+}
+
+
+.popover {
+    line-height: 2.1rem;
+    background-color: #fff;
+    color: $color-dark;
+    border: none !important;
+    padding: 0;
+
+    &:before,
+    &:after {
+        display: none;
+    }
+
+    .popover-header {
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 10px 15px;
+        margin: 0;
+        background-color: $color-primary;
+        color: #fff;
+    }
+
+    .popover-body {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+}

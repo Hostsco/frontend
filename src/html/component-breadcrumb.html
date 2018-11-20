@@ -1,0 +1,224 @@
+<!-- build:include layout/header.html --><!-- /build -->
+
+<div class="material-background"></div>
+
+<div class="container container-full">
+    <div class="ms-paper">
+        <div class="row">
+            <!-- build:componentsMenu component-breadcrumb.html --><!-- /build -->
+            <div class="col-lg-9 ms-paper-content-container">
+                <div class="ms-paper-content">
+                    <h1>Breadcrumb</h1>
+                    <p>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+                    <section class="ms-component-section">
+                        <h2 class="section-title no-margin-top">Basic Breadcrumbs</h2>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>With Arrows</h3>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Other</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>With Slash</h3>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-slash">
+                                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-slash">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-slash">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-slash">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Other</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <hr class="dotted">
+
+                        <div class="card card-info card-code">
+                            <div class="card-header card-code-header" role="tab" id="codeHead1">
+                                <h4 class="panel-title card-code-title">
+                                    <a class="collapsed withripple" role="button" data-toggle="collapse" href="#code1" aria-expanded="false" aria-controls="code1">
+                                        <i class="zmdi zmdi-code"></i> Show Code
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="code1" class="card-collapse collapse" role="tabpanel" aria-labelledby="codeHead1">
+                                <div class="card-code-block">
+<pre><code class="language-markup line-numbers">&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+    &lt;ol class=&quot;breadcrumb&quot;&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Data&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+    &lt;ol class=&quot;breadcrumb breadcrumb-slash&quot;&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Data&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div> <!-- card-code -->
+                    </section>
+
+                    <section class="ms-component-section">
+                        <h2 class="section-title no-margin-top">Buttons Breadcrumbs</h2>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Without Shadow</h3>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-bg">
+                                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-bg">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-bg">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-bg">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Other</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>With Shadow</h3>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-slash breadcrumb-bg">
+                                        <li class="breadcrumb-item shadow-2dp active" aria-current="page">Home</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-slash breadcrumb-bg">
+                                        <li class="breadcrumb-item shadow-2dp"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item shadow-2dp active" aria-current="page">Library</li>
+                                    </ol>
+                                </nav>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-slash breadcrumb-bg">
+                                        <li class="breadcrumb-item shadow-2dp"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item shadow-2dp"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item shadow-2dp active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-slash breadcrumb-bg">
+                                        <li class="breadcrumb-item shadow-2dp"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item shadow-2dp"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item shadow-2dp"><a href="#">Other</a></li>
+                                        <li class="breadcrumb-item shadow-2dp active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <hr class="dotted">
+
+                        <div class="card card-info card-code">
+                            <div class="card-header card-code-header" role="tab" id="codeHead2">
+                                <h4 class="panel-title card-code-title">
+                                    <a class="collapsed withripple" role="button" data-toggle="collapse" href="#code2" aria-expanded="false" aria-controls="code2">
+                                        <i class="zmdi zmdi-code"></i> Show Code
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="code2" class="card-collapse collapse" role="tabpanel" aria-labelledby="codeHead2">
+                                <div class="card-code-block">
+<pre><code class="language-markup line-numbers">&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+    &lt;ol class=&quot;breadcrumb breadcrumb-bg&quot;&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Data&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+    &lt;ol class=&quot;breadcrumb breadcrumb-slash breadcrumb-bg&quot;&gt;
+        &lt;li class=&quot;breadcrumb-item shadow-2dp&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item shadow-2dp&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item shadow-2dp&quot;&gt;&lt;a href=&quot;#&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;breadcrumb-item shadow-2dp active&quot; aria-current=&quot;page&quot;&gt;Data&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div> <!-- card-code -->
+                    </section>
+                </div> <!-- ms-paper-content -->
+            </div> <!-- col-lg-9 -->
+        </div> <!-- row -->
+    </div> <!-- ms-paper -->
+</div> <!-- container -->
+
+<!-- build:include layout/footer.html --><!-- /build -->

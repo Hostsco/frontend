@@ -1,0 +1,989 @@
+.ms-navbar,
+.ms-lead-navbar {
+    height: 50px;
+    z-index: 1;
+    background-color: $color-primary;
+    padding: 0;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.29);
+    z-index: 1170;
+
+    .container {
+        position: relative;
+    }
+
+    .navbar-header {
+        display: none;
+        height: 50px;
+
+
+        .navbar-brand {
+            align-items: center;
+            padding: 0 1rem;
+            height: auto;
+            display: flex;
+            font-weight: 300;
+            word-spacing: -4px;
+            font-size: 20px;
+            //padding: 0 15px;
+            margin: 0;
+            color: $color-light;
+            white-space: nowrap;
+
+            img {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            .ms-title {
+                strong {
+                    display: inline-block;
+                    font-weight: 400;
+                }
+            }
+
+            .ms-logo {
+                //margin-top: -5px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        justify-content: flex-start;
+        height: 50px;
+        z-index: 1140;
+
+        .navbar-nav {
+            align-self: stretch;
+
+            .nav-item {
+                display: flex;
+
+                & > a {
+                    padding: 0;
+                    //min-width: 100px;
+                    padding: 0 2rem;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    position: relative;
+                    overflow: hidden;
+                    font-size: 1.6rem;
+                    color: #fff;
+
+                    &:after {
+                        display: none;
+                    }
+
+                    &:before {
+                        transition: height ease .3s;
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        content: "";
+                        background-color: #fff;
+                        height: 0px;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: -1;
+                    }
+
+                    & > i {
+                        margin-left: 10px;
+                        transition: transform ease .5s;
+                        will-change: transform;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $color-primary;
+
+                        &:before {
+                            height: 100%;
+                        }
+                    }
+
+                }
+
+                &.active {
+                    a {
+                        background-color: transparent;
+
+                        &:before {
+                            height: 4px;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $color-primary;
+
+                            &:before {
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                &.dropdown {
+                    position: relative;
+
+                    .dropdown-menu {
+                        font-size: 15px;
+                        padding: 0;
+                        background-color: #fff;
+                        border-radius: 0;
+                        box-shadow: none;
+                        box-shadow: 0 3px 3px rgba(0,0,0,.29), 0 3px 3px rgba(0,0,0,.29);
+                        display: flex;
+                        flex-direction: column;
+                        transform: scale(0);
+                        transform-origin: 0 0;
+                        left: 0;
+                        top: 48.7px;
+                        right: auto;
+                        white-space: nowrap;
+
+                        &:focus,
+                        &:hover {
+                            transform: scale(1);
+                        }
+
+                        li {
+                            .dropdown-item {
+                                color: $color-dark-light;
+                                padding: 10px 35px 10px 20px;
+                                font-weight: 400;
+                                font-size: 15px;
+                                transition: none;
+
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    left: 0; top: 0; right: 0; bottom: 0;
+                                    width: 100%;
+                                    z-index: -1;
+                                    height: 100%;
+                                    background-color: #fff;
+                                }
+
+                                &:hover,
+                                &:focus {
+                                    color: $color-primary;
+                                    background-color: $color-light-dark;
+                                }
+
+                                &.with-badge {
+                                    position: relative;
+                                    padding-right: 60px;
+
+                                    .badge {
+                                        position: absolute;
+                                        right: 10px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                    }
+                                }
+
+
+                                i {
+                                    margin-right: 15px;
+                                    transition: background 0.3s;
+                                }
+                            }
+                        }
+
+                        .dropdown-submenu {
+                            position: relative;
+                            overflow: visible;
+                            font-size: 15px;
+
+                            & > a {
+
+
+                                &:after {
+                                    margin-right: -15px;
+                                    font-family: 'Material-Design-Iconic-Font';
+                                    content: "\f2fb";
+                                    float: right;
+                                    vertical-align: middle;
+                                }
+                            }
+
+                            .dropdown-menu {
+                                top: 0px;
+                                left: 99%;
+                                margin-top: 0px;
+                                margin-left: 0px;
+                                z-index: 0;
+                                background-color: $color-light;
+                                display: none;
+                                z-index: -2;
+
+                                &.open_t,
+                                &:hover,
+                                &:focus {
+                                    display: block;
+                                }
+
+                                a {
+                                    background-color: transparent;
+
+                                    &:before {
+                                        background-color: $color-light;
+                                    }
+
+                                    &.with-badge {
+                                        position: relative;
+                                        padding-right: 60px;
+
+                                        .badge {
+                                            position: absolute;
+                                            right: 10px;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                        }
+                                    }
+
+                                    &:hover,
+                                    &:focus {
+                                        background-color: darken($color-light-dark, 5%);
+                                    }
+                                }
+                            }
+                        }
+
+                        .ms-tab-menu {
+                            display: flex;
+                            flex-direction: row;
+                            transition: all ease 0.3s;
+                            min-width: 500px;
+                            font-size: 15px;
+
+                            .ms-tab-menu-left {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                border: 0;
+                                background-color: #fff;
+                                color: $color-dark-light;
+
+                                .ms-tabs-indicator {
+                                    display: none;
+                                }
+
+                                .nav-item {
+                                    margin: 0;
+
+                                    a.nav-link {
+                                        color: $color-dark-light;
+                                        width: 100%;
+                                        display: flex;
+                                        height: 42px;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        font-weight: 400;
+                                        position: relative;
+                                        padding: 0 1.5rem;
+                                        border-radius: 0;
+                                        font-size: 15px;
+                                        transition: none;
+
+                                        i {
+                                            will-change: color;
+                                            margin-left: 0;
+                                            margin-right: 1.5rem;
+                                            transition: all ease .5s;
+                                            transform: none;
+                                        }
+
+                                        &:after {
+                                            font-family: 'Material-Design-Iconic-Font';
+                                            content: "\f2fb";
+                                            display: inline-block;
+                                            position: absolute;
+                                            right: 15px;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                        }
+
+                                        &:hover,
+                                        &:focus,
+                                        &.active {
+                                            background-color: $color-primary;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .ms-tab-menu-right {
+                                background-color: $color-light-dark;
+                                display: flex;
+                                width: 50%;
+
+                                .tab-pane {
+                                    width: 100%;
+                                }
+
+                                .ms-tab-menu-right-container {
+                                    padding: 0;
+                                    display: block;
+
+                                    li {
+                                        display: flex;
+                                        flex-direction: row;
+                                        margin: 0;
+
+                                        a {
+                                            font-size: 15px;
+                                            color: $color-dark-light;
+                                            width: 100%;
+                                            display: flex;
+                                            height: 42px;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            justify-content: flex-start;
+                                            padding: 0 1.5rem;
+                                            border-radius: 0;
+                                            position: relative;
+
+                                            &:hover,
+                                            &:focus {
+                                                color: $color-primary;
+                                                background-color: darken($color-light-dark, 5%);
+                                            }
+
+                                            &.with-badge {
+                                                position: relative;
+                                                padding-right: 60px;
+
+                                                .badge {
+                                                    position: absolute;
+                                                    right: 15px;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                }
+                                            }
+                                        }
+
+                                        &.disable {
+                                            a {
+                                                cursor: not-allowed;
+                                                color: $color-medium;
+                                                background-color: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.show {
+                        & > a,
+                        & > a:hover,
+                        & > a:focus {
+                            color: $color-primary;
+
+                            &:before {
+                                height: 100%;
+                            }
+
+                            i {
+                                transform: rotate(90deg);
+                            }
+                        }
+
+                        .dropdown-menu {
+                            transform: scale(1);
+                            transition: all .4s ease;
+                        }
+                    }
+
+                    &.dropdown-megamenu-container {
+                        position: static;
+                    }
+
+                    .dropdown-megamenu {
+                        background-color: transparent;
+                        box-shadow: none;
+                        padding: 0px;
+                        transform: scale(1);
+                        display: none;
+                        right: 0;
+                        left: 0;
+                        padding: 0 15px;
+
+
+                        & > li {
+                            //padding-bottom: 10px;
+                            background-color: #fff;
+                            box-shadow: 0 3px 3px rgba(0,0,0,.29), 0 3px 3px rgba(0,0,0,.29);
+
+                            .row {
+                                //margin: 0;
+
+                                .megamenu-col {
+                                    //padding: 0;
+                                    border-right: solid 1px $color-light-dark;
+                                    padding: 0;
+                                    //text-align: right;
+
+                                    &:first-child {
+                                        //padding-left: 15px;
+                                    }
+
+                                    &:last-child {
+                                        border: none;
+                                        //padding-right: 15px;
+                                    }
+
+                                    .megamenu-block {
+                                        .megamenu-block-title {
+                                            margin: 0;
+                                            font-size: 17px;
+                                            font-weight: 400;
+                                            text-transform: uppercase;
+                                            padding:30px 20px 20px 20px;
+                                            color: $color-primary;
+
+                                            i {
+                                                margin: 0 12px 0 0;
+                                            }
+                                        }
+
+                                        .megamenu-block-list {
+                                            margin: 0;
+                                            padding: 0;
+                                            list-style-type: none;
+
+                                            li {
+                                                a {
+                                                    display: block;
+                                                    padding: 8px 20px;
+                                                    color: $color-dark-light;
+                                                    position: relative;
+                                                    font-size: 15px;
+
+                                                    .badge {
+                                                        vertical-align: middle;
+                                                        position: absolute;
+                                                        right: 1.5rem;
+                                                        top: 50%;
+                                                        transform: translateY(-50%);
+
+                                                        i {
+                                                            transition: all ease .5s;
+                                                        }
+                                                    }
+
+                                                    i {
+                                                        transition: all ease 0.3s;
+                                                        margin: 0 12px 0 0;
+                                                    }
+
+                                                    &:hover,
+                                                    &:focus {
+                                                        color: $color-primary;
+                                                        background-color: $color-light-dark;
+
+                                                        i {
+                                                            margin-right: 25px;
+                                                        }
+
+                                                        .badge {
+                                                            i {
+                                                                animation-name: vertical-loop;
+                                                                animation-iteration-count: infinite;
+                                                                animation-duration: 1s;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.show {
+                        .dropdown-megamenu {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-navbar-menu {
+        overflow: hidden;
+        font-size: 2.1rem;
+        color: #fff;
+        height: 50px;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0;
+        padding: 0;
+        line-height: 1;
+        margin: 0;
+        min-width: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+
+    &.navbar-mode {
+        .navbar-header {
+            display: flex;
+        }
+
+        .btn-navbar-menu {
+            display: block;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+            margin-right: 50px;
+        }
+    }
+
+    @keyframes fadeInDownPerso {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .fadeInDownPerso {
+      animation-name: fadeInDownPerso;
+    }
+
+    &.shrink {
+        animation: fadeInDownPerso;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+
+        .navbar-header {
+            display: flex;
+        }
+
+        .btn-navbar-menu {
+            display: block;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+            margin-right: 50px;
+        }
+    }
+}
+
+.ms-navbar-white {
+    background-color: #fff;
+
+    .navbar-header {
+        .navbar-brand {
+            color: $color-dark;
+        }
+    }
+
+    .btn-navbar-menu {
+        color: $color-dark;
+
+        &:hover,
+        &:focus {
+            color: $color-dark;
+        }
+    }
+}
+
+.ms-navbar-dark {
+    background-color: $color-dark;
+
+    .navbar-header {
+        .navbar-brand {
+            color: $color-light;
+        }
+    }
+}
+
+.ms-navbar-white,
+.ms-header-white + .ms-navbar-dark {
+    .navbar-collapse {
+        .navbar-nav {
+
+            .nav-item {
+
+                & > a {
+                    color: $color-dark;
+
+                    &:before {
+                        background-color: $color-primary;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                    }
+
+
+                }
+
+                &.active {
+                    & > a {
+                        color: $color-primary;
+                    }
+                }
+
+                &.dropdown {
+                    .dropdown-menu {
+                        background-color: $color-primary;
+
+                        li {
+                            .dropdown-item {
+                                color: #fff;
+
+                                &:before {
+                                    background-color: $color-primary;
+                                }
+
+                                &:hover,
+                                &:focus {
+                                    color: #fff;
+                                    background-color: $color-dark;
+                                }
+                            }
+
+                            &.dropdown-divider {
+                                border-color: $color-primary-dark;
+                            }
+                        }
+
+                        .dropdown-submenu {
+                            .dropdown-menu {
+                                background-color: $color-primary-dark;
+
+                                li {
+                                    &.dropdown-divider {
+                                        border-color: darken($color-primary-dark, 5%);
+                                    }
+                                }
+
+                                a {
+                                    background-color: transparent;
+
+                                    &:before {
+                                        background-color: $color-primary-dark;
+                                    }
+
+                                    &:hover,
+                                    &:focus {
+                                        background-color: $color-dark;
+                                    }
+                                }
+                            }
+                        }
+
+                        .ms-tab-menu {
+                            .ms-tab-menu-left {
+                                background-color: $color-primary;
+                                color: #fff;
+
+                                .nav-item {
+
+                                    a.nav-link {
+                                        color: #fff;
+
+                                        &:hover,
+                                        &:focus,
+                                        &.active {
+                                            background-color: $color-dark;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .ms-tab-menu-right {
+                                background-color: $color-light-dark;
+
+                                .ms-tab-menu-right-container {
+                                    li {
+                                        a {
+                                            color: $color-dark-light;
+
+                                            &:hover,
+                                            &:focus {
+                                                color: $color-primary;
+                                                background-color: darken($color-light-dark, 5%);
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.show {
+                        & > a,
+                        & > a:hover,
+                        & > a:focus {
+                            color: #fff;
+                        }
+                    }
+
+                    .dropdown-megamenu {
+                        background-color: transparent;
+
+                        & > li {
+                            background-color: $color-primary;
+
+                            .row {
+                                .megamenu-col {
+                                    border-right: solid 1px $color-primary-dark;
+
+
+                                    .megamenu-block {
+                                        .megamenu-block-title {
+                                            color: #fff;
+                                        }
+
+                                        .megamenu-block-list {
+                                            li {
+                                                a {
+                                                    color: #fff;
+
+                                                    &:hover,
+                                                    &:focus {
+                                                        color: #fff;
+                                                        background-color: $color-dark;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ms-header-white + .ms-navbar-primary,
+.ms-header-primary + .ms-navbar-white {
+    .navbar-collapse {
+        .navbar-nav {
+
+            .nav-item {
+
+                & > a {
+                    color: #fff;
+
+                    &:before {
+                        background-color: $color-dark;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                    }
+                }
+
+                &.dropdown {
+                    .dropdown-menu {
+                        background-color: $color-dark;
+
+                        li {
+                            .dropdown-item {
+                                color: #fff;
+
+                                &:before {
+                                    background-color: $color-dark;
+                                }
+
+                                &:hover,
+                                &:focus {
+                                    color: #fff;
+                                    background-color: $color-primary;
+                                }
+                            }
+
+                            &.dropdown-divider {
+                                border-color: darken($color-dark, 5%);
+                            }
+                        }
+
+                        .dropdown-submenu {
+                            .dropdown-menu {
+                                background-color: $color-dark-dark;
+
+                                li {
+                                    &.dropdown-divider {
+                                        border-color: darken($color-dark-dark, 5%);
+                                    }
+                                }
+
+                                a {
+                                    background-color: transparent;
+
+                                    &:before {
+                                        background-color: $color-dark-dark;
+                                    }
+
+                                    &:hover,
+                                    &:focus {
+                                        background-color: $color-primary;
+                                    }
+                                }
+                            }
+                        }
+
+                        .ms-tab-menu {
+                            .ms-tab-menu-left {
+                                background-color: $color-dark;
+                                color: #fff;
+
+                                .nav-item {
+
+                                    a.nav-link {
+                                        color: #fff;
+
+                                        &:hover,
+                                        &:focus,
+                                        &.active {
+                                            background-color: $color-primary;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .ms-tab-menu-right {
+                                background-color: $color-dark-dark;
+
+                                .ms-tab-menu-right-container {
+                                    li {
+                                        a {
+                                            color: #fff;
+
+                                            &:hover,
+                                            &:focus {
+                                                color: #fff;
+                                                background-color: $color-primary;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.show {
+                        & > a,
+                        & > a:hover,
+                        & > a:focus {
+                            color: #fff;
+                        }
+                    }
+
+                    .dropdown-megamenu {
+                        background-color: transparent;
+
+                        & > li {
+                            background-color: $color-dark;
+
+                            .row {
+                                .megamenu-col {
+                                    border-right: solid 1px darken($color-dark, 5%);
+
+
+                                    .megamenu-block {
+                                        .megamenu-block-title {
+                                            color: #fff;
+
+                                            i {
+                                                color: $color-primary;
+                                            }
+                                        }
+
+                                        .megamenu-block-list {
+                                            li {
+                                                a {
+                                                    color: #fff;
+
+                                                    &:hover,
+                                                    &:focus {
+                                                        color: #fff;
+                                                        background-color: $color-primary;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ms-header-white + .ms-navbar-dark {
+    .navbar-collapse {
+        .navbar-nav {
+
+            .nav-item {
+
+                & > a {
+                    color: #fff;
+                }
+
+                &.active {
+                    & > a {
+                        color:  #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.ms-header-primary + .ms-navbar-white {
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                & > a {
+                    color: $color-dark;
+                }
+            }
+        }
+    }
+}

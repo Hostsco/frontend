@@ -1,0 +1,14 @@
+.checkbox,
+label.checkbox-inline {
+
+    .checkbox-material {
+        vertical-align: middle;
+        position: relative;
+        top: 3px;
+        &:before { // FIXME: document why this is necessary (doesn't seem to be on chrome)
+            display: block;
+            position: absolute;
+            top: -3px;
+        }
+    }
+}

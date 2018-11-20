@@ -1,0 +1,40 @@
+.ms-logo {
+  width: auto;
+  height: 50px;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 50px;
+
+  img {
+    height: 35px;
+    width: auto;
+  }
+
+  &.ms-logo-white {
+    color: $color-primary;
+    background-color: transparent;
+    text-shadow: none;
+  }
+
+  &.ms-logo-sm {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+
+  &.ms-logo-lg {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    font-size: 36px;
+  }
+}
+
+.ms-navbar-primary {
+  .ms-logo {
+    color: $color-primary;
+    background-color: transparent;
+    text-shadow: none;
+  }
+}
