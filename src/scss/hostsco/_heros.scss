@@ -34,6 +34,10 @@
   font-size: 53px;
   font-weight: 700;
 }
+.hero-full-screen h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
 @media (max-width: 991px) {
   .hero-full-screen h1 {
     font-size: 46px;
@@ -59,12 +63,28 @@
   background-position: bottom center;
   background-repeat: no-repeat;
 }
+.ms-hero-img-random {
+  background-image: url('https://source.unsplash.com/1600x1200/?travel');
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
 
 .hero-full-screen .card {
   background-color: rgba(255, 255, 255, 0.87);
+  padding-top: 10px;
 }
 @media (max-width: 767px) {
   .hero-full-screen .card .card-body {
     padding: 10px 0 10px 0;
+  }
+}
+
+.you-could-earn {
+  h3 {
+    margin: 0;
+  }
+  h2 {
+    margin: 0;
   }
 }

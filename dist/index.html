@@ -44,6 +44,12 @@
 
     <link rel="stylesheet" href="assets/css/plugins.min.css">
 
+
+    <!-- Font Awesome 5.5.0 -->
+        <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <!-- /Font Awesome 5.5.0 -->
+
+
         <link rel="stylesheet" href="assets/css/hostsco-global.css">
 
 
@@ -63,14 +69,14 @@
     <nav class="navbar navbar-expand-md navbar-fixed ms-lead-navbar navbar-mode navbar-mode mb-0" id="navbar-lead">
     <div class="container-fluid container-full">
         <div class="navbar-header">
-            <a class="navbar-brand" href="home-landing.html">
+            <a class="navbar-brand" href="index.html">
                 <!-- <img src="assets/img/demo/logo-navbar.png" alt=""> -->
                 <span class="ms-logo"><img src="assets/img/hostsco-logo-negative.svg" alt="hostsco"> </span>
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item"><button class="btn btn-primary btn-raised" href="signup.html">Become a host</button></li>
+                <li class="nav-item"><button class="btn btn-primary btn-raised" onclick="location.href='host.html';">Become a host</button></li>
                 <li class="nav-item"><a class="nav-link" href="signup.html">SIGN UP</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.html">LOG IN</a></li>
             </ul>
@@ -85,7 +91,7 @@
 
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <h1 class="animated fadeInUp animation-delay-5">Go stay anywhere today</h1>
-                <div class="card card-primary animated fadeInUp animation-delay-7">
+                <div class="card card-primary animated fadeInLeft animation-delay-7">
                     <div class="card-body">
                         <form class="form-horizontal">
                             <fieldset>
@@ -161,9 +167,7 @@
 </div>
 
 <div class="bg-light index-1" id="">
-    
-
-<footer class="ms-footer">
+    <footer class="ms-footer footer-fullscreen">
     <div class="container">
         <p><img id="logo-footer" src="assets/img/hostsco-logo-negative.svg" alt="hostsco"> Copyright &copy; Hostsco 2018</p>
     </div>
@@ -319,33 +323,16 @@
 
     <div class="ms-slidebar sb-slidebar sb-left sb-momentum-scrolling sb-style-overlay">
 
+    <a href="index.html"><img id="logo-hostsco-mobile-nav" src="assets/img/hostsco-logo-primary.svg"></a>
+
     <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
-        <li><a data-scroll class="link" href="#team"><i class="zmdi zmdi-accounts"></i> Team</a></li>
-        <li><a data-scroll class="link" href="#contact"><i class="zmdi zmdi-email"></i> Contact</a></li>
+        <li><a class="link" href="index.html"><i class="fal fa-home"></i> Home</a></li>
+        <li><a class="link" href="host.html"><i class="fal fa-h-square"></i> Become a host</a></li>
+        <li><a class="link icon-wide-fix" href="signup.html"><i class="fal fa-user-plus"></i> Sign up</a></li>
+        <li><a class="link" href="login.html"><i class="fal fa-sign-in-alt"></i> Log in</a></li>
     </ul>
 
 </div>
-    
-<script src="assets/js/plugins.min.js"></script>
-
-    <script src="assets/js/ripples.js"></script>
-    <script src="assets/js/material.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/DropdownHover.js"></script>
-    <script src="assets/js/app.js"></script>
-
-
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-90917746-2', 'auto');
-    ga('send', 'pageview');
-  
-  </script>
     <script src="assets/js/lead.js"></script>
     <script>
         $('.input-daterange').datepicker({

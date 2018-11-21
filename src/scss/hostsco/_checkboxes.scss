@@ -12,3 +12,14 @@ label.checkbox-inline {
         }
     }
 }
+.checkbox input[type="checkbox"]:checked + .checkbox-material::after, label.checkbox-inline input[type="checkbox"]:checked + .checkbox-material::after {
+    background-color: #e5234a;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 16px;
+    position: absolute;
+    left: 2px;
+    top: -2px;
+    z-index: 1;
+}

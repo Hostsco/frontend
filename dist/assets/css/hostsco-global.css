@@ -12687,7 +12687,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
   .ms-lead-navbar .nav-item button.btn {
     margin-top: 5px;
     padding-top: 12px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    margin-top: 1px;
+    margin-bottom: 0; }
   .ms-lead-navbar .navbar-collapse {
     justify-content: flex-start;
     height: 50px;
@@ -12752,8 +12754,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
     .ms-lead-navbar.navbar-mode .btn-navbar-menu:hover, .ms-lead-navbar.navbar-mode .btn-navbar-menu:focus {
       color: #fff; } }
 
-.navbar-right {
-  margin-top: -1px; }
+.ms-slidebar .ms-slidebar-menu > li > a.icon-wide-fix > i {
+  margin-right: 10px; }
+
+#logo-hostsco-mobile-nav {
+  width: 100px;
+  height: auto;
+  margin: 20px 0 20px 20px; }
 
 .ms-hero-bg-primary::after {
   display: block;
@@ -12784,6 +12791,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
   font-size: 53px;
   font-weight: 700; }
 
+.hero-full-screen h2 {
+  font-size: 40px;
+  font-weight: 500; }
+
 @media (max-width: 991px) {
   .hero-full-screen h1 {
     font-size: 46px; } }
@@ -12805,12 +12816,25 @@ now override the 3.3 new styles for modern browsers & apply opacity
   background-position: bottom center;
   background-repeat: no-repeat; }
 
+.ms-hero-img-random {
+  background-image: url("https://source.unsplash.com/1600x1200/?travel");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+
 .hero-full-screen .card {
-  background-color: rgba(255, 255, 255, 0.87); }
+  background-color: rgba(255, 255, 255, 0.87);
+  padding-top: 10px; }
 
 @media (max-width: 767px) {
   .hero-full-screen .card .card-body {
     padding: 10px 0 10px 0; } }
+
+.you-could-earn h3 {
+  margin: 0; }
+
+.you-could-earn h2 {
+  margin: 0; }
 
 input, select, .btn.dropdown-toggle {
   text-transform: none;
@@ -12904,6 +12928,12 @@ body.bd-scroll {
   line-height: 36px;
   margin: -6px 30px 0px 0px; }
 
+.footer-fullscreen {
+  margin-top: -62px;
+  z-index: 1;
+  position: relative;
+  width: 100%; }
+
 .checkbox .checkbox-material,
 label.checkbox-inline .checkbox-material {
   vertical-align: middle;
@@ -12914,6 +12944,17 @@ label.checkbox-inline .checkbox-material {
     display: block;
     position: absolute;
     top: -3px; }
+
+.checkbox input[type="checkbox"]:checked + .checkbox-material::after, label.checkbox-inline input[type="checkbox"]:checked + .checkbox-material::after {
+  background-color: #e5234a;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 16px;
+  position: absolute;
+  left: 2px;
+  top: -2px;
+  z-index: 1; }
 
 .form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
   color: rgba(0, 0, 0, 0.87) !important;
@@ -12933,5 +12974,8 @@ label.checkbox-inline .checkbox-material {
 
 .form-group.form-group-select {
   margin-top: 19px; }
+
+.text-smaller {
+  font-size: 75%; }
 
 /*# sourceMappingURL=maps/hostsco-global.css.map */
