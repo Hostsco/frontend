@@ -12857,6 +12857,14 @@ input, select, .btn.dropdown-toggle {
 .form-group .form-control::placeholder {
   color: rgba(0, 0, 0, 0.87) !important; }
 
+.form-group .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(0, 0, 0, 0.87) !important; }
+
+.form-group .form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(0, 0, 0, 0.87) !important; }
+
 .form-control {
   padding-left: 10px; }
 

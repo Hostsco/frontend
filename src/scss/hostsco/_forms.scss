@@ -13,11 +13,25 @@ input, select, .btn.dropdown-toggle {
   margin-left: 15px !important;
   margin-right: 0px;
 }
-.input-daterange input::placeholder {
-  color: rgba(0,0,0,.87) !important;
+.input-daterange input {
+
+  &::placeholder {
+    color: rgba(0,0,0,.87) !important;
+  }
+
 }
-.form-group .form-control::placeholder {
-  color: rgba(0,0,0,.87) !important;
+
+.form-group .form-control {
+
+  &::placeholder {
+    color: rgba(0,0,0,.87) !important;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0,0,0,.87) !important;
+  }
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0,0,0,.87) !important;
+  }
 }
 
 //Inputs
