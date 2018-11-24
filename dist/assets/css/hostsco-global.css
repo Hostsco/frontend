@@ -12688,7 +12688,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     margin-top: 5px;
     padding-top: 12px;
     margin-right: 20px;
-    margin-top: 1px;
+    margin-top: -3px;
     margin-bottom: 0; }
   .ms-lead-navbar .navbar-collapse {
     justify-content: flex-start;
@@ -12779,10 +12779,11 @@ now override the 3.3 new styles for modern browsers & apply opacity
   position: relative;
   height: 100vh;
   width: 100%;
-  margin-top: -60px; }
+  margin-top: -60px;
+  overflow: hidden; }
   .hero-full-screen .intro-fixed-content {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
